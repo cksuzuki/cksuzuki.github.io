@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Footer */
+
+#line-footer {
+    margin-top: 80px;
+    border: 4px solid #E5E5E5;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+footer #footer-social a {
+    margin-left: 40px;
+}
+
+footer #footer-social a:hover {
+    color: #EB6565;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        height: 160px;
+    }
+
+    footer p {
+        margin-bottom: 16px;
+    }
+
+    footer #footer-social a:first-child {
+        margin-left: 0;
+    }
+}

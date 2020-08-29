@@ -1,0 +1,252 @@
+/* Fonts */
+
+h1 {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: #EB6565;
+}
+
+h2 {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #EB6565;
+}
+
+h3 {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: #444;
+}
+
+p {
+    font-family: "Assistant", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+a {
+    font-family: "Assistant", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #444;
+    text-decoration: underline;
+}
+
+
+/* Header */
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 40px 24px 40px;
+    background-color: white;
+    width: 100%;
+}
+
+#logo {
+    font-family: "Assistant", sans-serif;
+    font-size: 1.25rem;
+    color: #999;
+}
+
+header #social-items a {
+    color: #999;
+}
+
+header #social-items a:hover {
+    color: #444;
+}
+
+header #social-items #instagram {
+    margin-right: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 16px 16px 16px 16px;
+        z-index: 9999;
+    }
+}
+
+
+/* Main content */
+
+#main-content {
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#illustration {
+    position: absolute;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#illustration img {
+    width: 32vmax;
+}
+
+#page-title {
+    text-align: center;
+    font-family: "Noto Serif JP", serif;
+    font-size: 10vmax;
+    color: #EB6565;
+    width: 100%;
+}
+
+#main-text .title-mobile {
+    display: none;
+}
+
+#description {
+    text-align: center;
+}
+
+#icon-scroll {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #page-title {
+        display: none;
+    }
+    #main-text .title-mobile {
+        display: block;
+        text-align: center;
+        font-family: "Noto Serif JP", serif;
+        font-size: 20vmax;
+        color: #EB6565;
+        line-height: 20vmax;
+    }
+}
+
+
+/* About me */
+
+#about-me {
+    display: flex;
+    justify-content: space-between;
+    margin: 120px auto 120px auto;
+    max-width: 1440px;
+}
+
+#about-description {
+    width: 40%;
+    padding-left: 160px;
+}
+
+#about-description h1 {
+    margin-bottom: 24px;
+}
+
+#about-description p {
+    margin-bottom: 24px;
+}
+
+#about-description p:last-child {
+    margin-bottom: 0;
+}
+
+#about-description p span {
+    font-weight: 700;
+}
+
+#about-illustration {
+    width: 60%;
+    text-align: right;
+    padding-right: 240px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #about-me {
+        flex-direction: column;
+    }
+
+    #about-description {
+        width: 100%;
+        padding: 0 16px 0 16px;
+        margin-bottom: 80px;
+    }
+
+    #about-illustration {
+        width: 100%;
+        padding: 0 16px 0 16px;
+    }
+
+    #about-illustration img {
+        width: 100%;
+    }
+}
+
+
+/* Works */
+
+#works {
+    margin: 64px auto 0 auto;
+}
+
+#works #title {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 64px;
+}
+
+#works #title h2 {
+    width: 50%;
+}
+
+#works .container-grid {
+    width: 100%;
+    padding: 0 16px 0 16px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 32px;
+}
+
+#works .container-grid a {
+    text-decoration: none;
+}
+
+#works .container-grid a:hover h3 {
+    text-decoration: underline;
+    color: #EB6565;
+}
+
+#works .container-grid .work-item {
+    margin-bottom: 64px;
+}
+
+#works .container-grid .work-item div img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+#works .container-grid .work-item h3 {
+    margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    #works .container-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #works .container-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #works #title h2 {
+        width: 100%;
+        margin-left: 16px;
+    }
+}
