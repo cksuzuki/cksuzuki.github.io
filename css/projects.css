@@ -53,6 +53,45 @@ figcaption {
 }
 
 
+/* Sticky Header */
+
+#sticky-header {
+    height: 60px;
+    display: none;
+    position: sticky;
+    top: 0px;
+    background: white;
+    align-items: center;
+    padding-left: 16px;
+    transition: transform 0.4s;
+}
+
+#sticky-header a {
+    height: 20px;
+}
+
+#header-name {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: #999;
+    margin-left: 24px;
+}
+
+
+/* Sticky Header behavior */
+
+.scroll-down #sticky-header {
+    display: flex;
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up #sticky-header {
+    display: flex;
+    transition: transform 0.4s;
+}
+
+
 /* Description */
 
 #project-description {
