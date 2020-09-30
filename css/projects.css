@@ -116,6 +116,10 @@ figcaption {
     margin-bottom: 24px;
 }
 
+#container-description p {
+    font-size: 1.5rem;
+}
+
 #circle {
     height: 25vw;
     width: 50vw;
@@ -164,6 +168,12 @@ figcaption {
 .text-case {
     max-width: 450px;
     margin: 0 auto 80px auto;
+}
+
+#project-case .image-opening {
+    max-width: 100vw;
+    margin: 0 auto 80px auto;
+    text-align: center;
 }
 
 #project-case .text-case p {

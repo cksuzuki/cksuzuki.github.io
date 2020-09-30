@@ -81,6 +81,8 @@ header #social-items #instagram {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+
 }
 
 #illustration {
@@ -96,7 +98,7 @@ header #social-items #instagram {
 #page-title {
     text-align: center;
     font-family: "Noto Serif JP", serif;
-    font-size: 10vmax;
+    font-size: 16vmax;
     color: #EB6565;
     width: 100%;
 }
