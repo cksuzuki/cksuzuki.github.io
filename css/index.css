@@ -209,7 +209,7 @@ header #social-items #instagram {
     width: 100%;
     padding: 0 16px 0 16px;
     display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 32px;
 }
 
