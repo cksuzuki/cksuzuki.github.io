@@ -176,6 +176,10 @@ figcaption {
     text-align: center;
 }
 
+#project-case .image-opening img {
+    max-width: 100vw;
+}
+
 #project-case .text-case p {
     margin-bottom: 24px;
 }
